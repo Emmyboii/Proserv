@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contact Us - Proserv Emergency Services Inc</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link rel="icon" href="/Images/Logo.png" type="image/png" />
+        <style>
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .animate-fadeInUp {
+        animation: fadeInUp 0.8s ease-out both;
+      }
+
+      .contact-section {
+        background: linear-gradient(
+            rgba(0, 32, 64, 0.7),
+            rgba(0, 32, 64, 0.7)
+          ),
+          url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80')
+            center / cover no-repeat;
+      }
+    </style>
+    </head>
+    <body
+        class="bg-white text-gray-900 font-sans leading-relaxed scroll-smooth">
+        <!-- Header -->
+        <header class="bg-yellow-800 text-white sticky top-0 shadow-md z-50">
+            <div
+                class="container mx-auto px-6 py-4 flex justify-between items-center max-w-7xl">
+                <a href="/" class="flex items-center space-x-3">
+                    <img src="/Images/Logo.png" alt="Proserv Logo"
+                        class="w-16 rounded-full" />
+                </a>
+                <button
+                    id="nav-toggle"
+                    class="md:hidden focus:outline-none"
+                    aria-label="Toggle navigation menu"
+                    title="Toggle navigation menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <nav
+                    id="nav-menu"
+                    class="hidden md:flex space-x-8 text-lg font-medium">
+                    <a href="/" class="hover:text-yellow-300">Home</a>
+                    <a href="/about" class="hover:text-yellow-300">About</a>
+                    <a href="/services"
+                        class="hover:text-yellow-300">Services</a>
+                    <a href="/contact" class="underline font-bold">Contact</a>
+                </nav>
+            </div>
+
+            <!-- Mobile Nav -->
+            <div id="nav-mobile"
+                class="hidden md:hidden bg-yellow-800 px-6 pb-4">
+                <nav class="flex flex-col space-y-2">
+                    <a href="/" class="text-white">Home</a>
+                    <a href="/about" class="text-white">About</a>
+                    <a href="/services" class="text-white">Services</a>
+                    <a href="/contact" class="text-white">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="contact-section text-white text-center py-24 px-6">
+            <div class="max-w-3xl mx-auto animate-fadeInUp">
+                <h1 class="md:text-5xl sm:text-4xl text-2xl font-bold mb-4">Contact Proserv Emergency
+                    Services Inc.</h1>
+                <p class="sm:text-xl">
+                    Questions? Urgent requests? We're ready 24/7 to assist with
+                    your emergency repair needs.
+                </p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <main class="py-20 px-6">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <aside class="space-y-8 animate-fadeInUp">
+                    <h2 class="text-4xl font-bold text-blue-800 mb-4">Get in
+                        Touch</h2>
+                    <p class="text-lg text-gray-700">
+                        Need emergency help or a quick quote? Call, email or
+                        visit us.
+                    </p>
+                    <div class="text-lg text-gray-800 space-y-4">
+                        <div>
+                            <h4 class="font-semibold text-blue-700 mb-1">
+                                <i
+                                    class="fas fa-phone-alt text-blue-600 mr-2"></i>
+                                Phone
+                            </h4>
+                            <a href="tel:+13128711893"
+                                class="text-blue-700 underline hover:text-blue-900">
+                                +1 (312) 871-1893
+                            </a>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-blue-700 mb-1">
+                                <i
+                                    class="fas fa-map-marker-alt text-blue-600 mr-2"></i>
+                                Address
+                            </h4>
+                            <p>6136 N Winchester Avenue STE 2H, Chicago, IL</p>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-blue-700 mb-1">
+                                <i
+                                    class="fas fa-envelope text-blue-600 mr-2"></i>
+                                Email
+                            </h4>
+                            <a href="mailto:contact@proserveemergency.com"
+                                class="text-blue-700 underline hover:text-blue-900">
+                                contact@proserveemergency.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mt-6 shadow-lg rounded overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2968.1621616227315!2d-87.67776568455383!3d41.99354067921516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fcdf1955803b9%3A0x5bb05d94bce22c0e!2s6136%20N%20Winchester%20Ave%20%232h%2C%20Chicago%2C%20IL%2060645%2C%20USA!5e0!3m2!1sen!2sus!4v1710965275089!5m2!1sen!2sus"
+                            width="100%"
+                            height="300"
+                            style="border:0;"
+                            allowfullscreen
+                            loading="lazy"></iframe>
+                    </div>
+                </aside>
+
+                <!-- Contact Form -->
+                <section
+                    class="bg-blue-50 p-8 rounded-lg shadow-lg animate-fadeInUp">
+                    <h3 class="sm:text-3xl text-xl font-bold text-blue-800 mb-6">Send Us a
+                        Message</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label class="block font-semibold mb-2"
+                                for="name">Full Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                placeholder="Your Name"
+                                class="w-full px-4 py-3 border rounded focus:ring-2 focus:ring-blue-500" />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block font-semibold mb-2"
+                                for="email">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                placeholder="you@example.com"
+                                class="w-full px-4 py-3 border rounded focus:ring-2 focus:ring-blue-500" />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block font-semibold mb-2"
+                                for="phone">Phone</label>
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                required
+                                placeholder="Your phone number"
+                                class="w-full px-4 py-3 border rounded focus:ring-2 focus:ring-blue-500" />
+                        </div>
+                        <div class="mb-6">
+                            <label class="block font-semibold mb-2"
+                                for="message">Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required
+                                placeholder="How can we help you?"
+                                class="w-full px-4 py-3 border resize-none rounded focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button
+                            type="submit"
+                            class="w-full bg-blue-700 text-white font-semibold py-3 rounded hover:bg-blue-800 transition">
+                            Send Message
+                        </button>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <!-- FAQ Section -->
+        <section class="bg-gradient-to-br from-white to-blue-50 py-20 px-6">
+            <div class="container mx-auto max-w-5xl">
+               <h3
+                    class="sm:text-4xl text-2xl font-bold text-center text-blue-900 mb-12">Frequently
+                    Asked Questions</h3>
+
+                <div class="space-y-6">
+                    <!-- FAQ Item -->
+                    <details
+                        class="group border border-blue-100 bg-white p-6 rounded-xl shadow-sm transition duration-300">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer sm:text-lg font-semibold text-blue-800">
+                            What areas do you serve?
+                            <span
+                                class="ml-2 text-blue-500 icon-plus toggle-icon">+</span>
+                            <span
+                                class="ml-2 text-blue-500 icon-minus toggle-icon hidden">−</span>
+
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            We proudly serve Chicago, IL and surrounding
+                            neighborhoods. If you're unsure whether we cover
+                            your area, feel free to reach out we're always
+                            happy to help.
+                        </p>
+                    </details>
+
+                    <details
+                        class="group border border-blue-100 bg-white p-6 rounded-xl shadow-sm transition duration-300">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer sm:text-lg font-semibold text-blue-800">
+                            What types of services do you offer?
+                            <span
+                                class="ml-2 text-blue-500 icon-plus toggle-icon">+</span>
+                            <span
+                                class="ml-2 text-blue-500 icon-minus toggle-icon hidden">−</span>
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            We specialize in emergency handyman work, light
+                            electrical repairs, and minor plumbing solutions
+                            perfect for quick fixes and urgent home needs.
+                        </p>
+                    </details>
+
+                    <details
+                        class="group border border-blue-100 bg-white p-6 rounded-xl shadow-sm transition duration-300">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer sm:text-lg font-semibold text-blue-800">
+                            Are you licensed and insured?
+                            <span
+                                class="ml-2 text-blue-500 icon-plus toggle-icon">+</span>
+                            <span
+                                class="ml-2 text-blue-500 icon-minus toggle-icon hidden">−</span>
+
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            Yes! Proserv Emergency Services is fully insured,
+                            and our technicians are trained to industry
+                            standards. We guarantee quality and safety on every
+                            job.
+                        </p>
+                    </details>
+
+                    <details
+                        class="group border border-blue-100 bg-white p-6 rounded-xl shadow-sm transition duration-300">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer sm:text-lg font-semibold text-blue-800">
+                            How do I get a quote or book a service?
+                            <span
+                                class="ml-2 text-blue-500 icon-plus toggle-icon">+</span>
+                            <span
+                                class="ml-2 text-blue-500 icon-minus toggle-icon hidden">−</span>
+
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            You can call us, email, or fill out our online
+                            contact form. We respond quickly to provide free
+                            estimates and set up your appointment.
+                        </p>
+                    </details>
+
+                    <details
+                        class="group border border-blue-100 bg-white p-6 rounded-xl shadow-sm transition duration-300">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer sm:text-lg font-semibold text-blue-800">
+                            Do you handle emergency calls?
+                            <span
+                                class="ml-2 text-blue-500 icon-plus toggle-icon">+</span>
+                            <span
+                                class="ml-2 text-blue-500 icon-minus toggle-icon hidden">−</span>
+
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            Absolutely. If something breaks unexpectedly like
+                            a leak or power issue call us right away. Our
+                            emergency response team will do its best to help
+                            ASAP.
+                        </p>
+                    </details>
+                </div>
+
+                <!-- CTA -->
+                <div class="text-center mt-14">
+                    <a href="/contact"
+                        class="inline-block bg-blue-900 text-white px-8 py-3 rounded-full font-semibold shadow hover:bg-blue-800 transition">
+                        Still have questions? Contact us →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-gray-300 py-12">
+            <div
+                class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
+
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <h4
+                        class="text-xl font-semibold text-white mb-4">Proserv
+                        Emergency Services Inc</h4>
+                    <p class="text-gray-400 mb-4">
+                        Emergency handyman, minor electrical, and plumbing
+                        solutions across Chicago, IL. Fast, reliable, and
+                        done
+                        right the first time.
+                    </p>
+                    <p class="text-gray-500 text-sm">&copy; 2025 Proserv
+                        Emergency Services Inc</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Quick
+                        Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/"
+                                class="hover:text-white transition">Home</a></li>
+                        <li><a href="/about"
+                                class="hover:text-white transition">About
+                                Us</a></li>
+                        <li><a href="/services"
+                                class="hover:text-white transition">Services</a></li>
+                        <li><a href="/contact"
+                                class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4
+                        class="text-xl font-semibold text-white mb-4">Contact</h4>
+                    <p class="text-gray-400 flex items-start">
+                        <img
+                            src="https://img.icons8.com/ios-filled/50/ffffff/marker.png"
+                            class="w-5 h-5 mr-2 mt-1"
+                            alt="Map marker icon" />
+                        6136 N Winchester Avenue STE 2H, Chicago, IL
+                    </p>
+                    <p class="text-gray-400 flex items-center mt-4">
+                        <img
+                            src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"
+                            class="w-5 h-5 mr-2" alt="Phone icon" />
+                        <a href="tel:+13128711893"
+                            class="hover:text-white transition">+1 (312)
+                            871-1893</a>
+                    </p>
+                    <p class="text-gray-400 flex items-center mt-4">
+                        <img
+                            src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png"
+                            class="w-5 h-5 mr-2" alt="Email icon" />
+                        <a href="mailto:admin@proservemergency.com"
+                            class="hover:text-white transition">admin@proservemergency.com</a>
+                    </p>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4
+                        class="text-xl font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/terms-and-conditions" target="_blank"
+                                class="hover:text-white transition">Terms &
+                                Conditions</a></li>
+                        <li><a href="/privacy-policy" target="_blank"
+                                class="hover:text-white transition">Privacy
+                                Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Follow
+                        Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="text-gray-400 hover:text-white transition"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12a10 10 0 10-11.5 9.8v-6.9H8v-2.9h2.5V9.5c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.3 0-1.7.8-1.7 1.6v2h2.9l-.5 2.9h-2.4v6.9A10 10 0 0022 12z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="text-gray-400 hover:text-white transition"
+                            aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M8 19c7.7 0 11.9-6.3 11.9-11.7 0-.2 0-.4 0-.6A8.3 8.3 0 0022 5.5a8.2 8.2 0 01-2.3.7 4.1 4.1 0 001.8-2.3 8.3 8.3 0 01-2.6 1 4.1 4.1 0 00-7 3.7 11.6 11.6 0 01-8.5-4.3 4.1 4.1 0 001.3 5.4A4 4 0 012 9.7v.1a4.1 4.1 0 003.3 4 4.1 4.1 0 01-1.8.1 4.1 4.1 0 003.8 2.8 8.3 8.3 0 01-5.7 1.6 8.4 8.4 0 01-1-.1 11.7 11.7 0 007 2" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="text-gray-400 hover:text-white transition"
+                            aria-label="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0 2h10c1.6 0 3 1.4 3 3v10c0 1.6-1.4 3-3 3H7c-1.6 0-3-1.4-3-3V7c0-1.6 1.4-3 3-3zm5 2a4 4 0 100 8 4 4 0 000-8zm0 2a2 2 0 110 4 2 2 0 010-4zm4.5-.5a1 1 0 11-2 0 1 1 0 012 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Back to Top Button -->
+            <div class="mt-12 text-center">
+                <a href="#top"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full shadow-lg transition duration-300 ease-in-out">
+                    ↑ Back to Top
+                </a>
+            </div>
+        </footer>
+    </body>
+
+    <script>
+    // Simple mobile nav toggle
+    const btn = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-mobile');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("details").forEach((detail) => {
+      const toggle = detail.querySelector(".toggle-icon");
+      const plus = detail.querySelector(".icon-plus");
+      const minus = detail.querySelector(".icon-minus");
+
+      detail.addEventListener("toggle", () => {
+        if (detail.open) {
+          plus.classList.add("hidden");
+          minus.classList.remove("hidden");
+        } else {
+          plus.classList.remove("hidden");
+          minus.classList.add("hidden");
+        }
+      });
+    });
+  });
+  </script>
+</html>

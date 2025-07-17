@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Services - Proserv Emergency Services Inc</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link rel="icon" href="/Images/Logo.png" type="image/png" />
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body class="bg-white text-gray-900 font-sans leading-relaxed">
+
+        <!-- Header -->
+        <header class="bg-yellow-800 text-white shadow-md sticky top-0 z-50">
+            <div
+                class="container mx-auto flex items-center justify-between py-3 px-5 max-w-7xl">
+                <!-- Logo + Site Title -->
+                <a href="/" class="flex items-center space-x-3">
+                    <img src="/Images/Logo.png"
+                        alt="Zimlink Contractors Logo"
+                        class="w-20 rounded-3xl" />
+                </a>
+
+                <button
+                    id="nav-toggle"
+                    class="md:hidden focus:outline-none"
+                    aria-label="Toggle navigation menu"
+                    title="Toggle navigation menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <!-- Navigation Links -->
+                <nav id="nav-menu"
+                    class="hidden md:flex space-x-8 text-lg font-medium">
+                    <a href="/"
+                        class="hover:text-blue-300 font-bold transition">Home</a>
+                    <a href="/about"
+                        class="hover:text-blue-300 transition">About</a>
+                    <a href="/services"
+                        class="hover:text-blue-300 underline transition">Services</a>
+                    <a href="/contact"
+                        class="hover:text-blue-300 transition">Contact</a>
+                </nav>
+            </div>
+
+            <!-- Mobile Nav (shown when toggled) -->
+            <div id="nav-mobile"
+                class="md:hidden hidden absolute top-26 w-full z-50 bg-yellow-800">
+                <nav class="flex flex-col space-y-2 p-4">
+                    <a href="/"
+                        class="block text-white hover:text-blue-200">Home</a>
+                    <a href="/about"
+                        class="block text-white hover:text-blue-200">About</a>
+                    <a href="/services"
+                        class="block text-white hover:text-blue-200">Services</a>
+                    <a href="/contact"
+                        class="block text-white hover:text-blue-200">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <section
+            class="relative Servicehero-section text-white overflow-hidden min-h-screen flex items-center justify-center bg-cover bg-center">
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black bg-opacity-70 z-0"></div>
+
+            <!-- Content -->
+            <div
+                class="relative z-10 text-center flex flex-col items-center max-w-4xl px-6 space-y-6">
+                <h2
+                    class="md:text-5xl sm:text-4xl text-3xl font-extrabold leading-tight drop-shadow-lg">
+                    Rapid Emergency Repairs &<br class="hidden md:block" />
+                    Property Restoration
+                </h2>
+                <p
+                    class="text-lg md:text-xl text-blue-100 max-w-xl drop-shadow-md mx-auto">
+                    Serving Chicago with fast, reliable home repair solutions —
+                    from
+                    minor electrical fixes to plumbing repairs and general
+                    handyman
+                    services, we’ve got you covered.
+                </p>
+                <a
+                    href="/contact"
+                    class="inline-block bg-white text-yellow-900 font-bold px-8 py-4 rounded-full shadow-lg transform hover:-translate-y-1 hover:scale-109 duration-300 transition">
+                    Request Emergency Help</a>
+
+                <!-- Highlights -->
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8 mx-auto">
+                    <div class="flex items-center space-x-3">
+                        <img
+                            src="https://img.icons8.com/ios-filled/24/ffffff/security-checked.png"
+                            alt="Certified Icon" />
+                        <p class="text-blue-100 font-semibold">Licensed &
+                            Certified Technicians</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <img
+                            src="https://img.icons8.com/ios-filled/24/ffffff/clock--v1.png"
+                            alt="Clock Icon" />
+                        <p class="text-blue-100 font-semibold">Prompt Same-Day
+                            Service</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <img
+                            src="https://img.icons8.com/ios-filled/24/ffffff/electrical.png"
+                            alt="Electrical Icon" />
+                        <p class="text-blue-100 font-semibold">Minor Electrical
+                            Repairs</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <img
+                            src="https://img.icons8.com/ios-filled/24/ffffff/plumber.png"
+                            alt="Plumbing Icon" />
+                        <p class="text-blue-100 font-semibold">Minor Plumbing
+                            Fixes</p>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <img
+                            src="https://img.icons8.com/ios-filled/24/ffffff/hammer.png"
+                            alt="Handyman Icon" />
+                        <p class="text-blue-100 font-semibold">General Handyman
+                            Services</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Decorative SVG Wave (Full width at bottom) -->
+            <div class="absolute bottom-0 left-0 right-0 w-full z-10">
+                <svg viewBox="0 0 1440 120" xmlns="http://www.w3.org/2000/svg"
+                    class="w-full">
+                    <path fill="#FFFFFF"
+                        d="M0,80 C360,140 1080,20 1440,80 L1440,120 L0,120 Z"></path>
+                </svg>
+            </div>
+        </section>
+
+        <!-- Services Introduction -->
+        <section class="bg-yellow-50 py-20 px-6 text-center">
+            <div class="container mx-auto max-w-5xl">
+                <h2
+                    class="md:text-4xl sm:text-3xl text-2xl font-bold mb-6 text-yellow-900">Emergency
+                    Restoration & Repair Services</h2>
+                <p class="sm:text-lg text-base max-w-3xl mx-auto text-gray-700">
+                    Whether it's a sudden pipe burst, fire damage, or
+                    critical
+                    cleanup, Proserv Emergency Services Inc is ready to
+                    respond
+                    with precision and care.
+                    Our certified experts provide fast, dependable, and
+                    respectful solutions when you need them most.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-20 sm:px-20 px-6 bg-white space-y-20">
+
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto">
+                <h2 class="md:text-4xl sm:text-3xl text-2xl font-bold text-blue-900 mb-4">Detailed
+                    Emergency Services</h2>
+                <p class="text-gray-600 sm:text-lg text-base">
+                    When time matters, Proserv Emergency Services Inc. delivers
+                    expert help fast. Here’s how we serve your home with care
+                    and precision.
+                </p>
+            </div>
+
+            <!-- Handyman Service -->
+            <div
+                id="handyman"
+                class="bg-yellow-50 rounded-xl shadow-md p-10 flex flex-col lg:flex-row items-center gap-8">
+                <img src="/Images/handyman.jpg" alt="Handyman service"
+                    class="w-full lg:w-1/2 sm:h-80 object-cover rounded-lg shadow" />
+                <div class="flex-1">
+                    <h3
+                        class="sm:text-3xl text-xl font-semibold text-blue-900 mb-4">Emergency
+                        Handyman Services</h3>
+                    <p class="text-gray-700 mb-4">
+                        From broken fixtures to urgent repairs, our skilled
+                        handymen arrive promptly to restore function and safety
+                        to your space.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Drywall patching, doors & trim repairs</li>
+                        <li>Furniture assembly & mounting</li>
+                        <li>Quick general maintenance jobs</li>
+                        <li>Minor carpentry and fixture fixes</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Electrical Service -->
+            <div
+                id="electrical"
+                class="bg-blue-50 rounded-xl shadow-md p-10 flex flex-col-reverse lg:flex-row items-center gap-8">
+                <div class="flex-1">
+                    <h3 class="sm:text-3xl text-xl font-semibold text-blue-900 mb-4">Minor
+                        Electrical Repairs</h3>
+                    <p class="text-gray-700 mb-4">
+                        We address minor electrical problems before they become
+                        major. Fast diagnostics and safe fixes, every time.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Outlet, switch, and breaker replacements</li>
+                        <li>Ceiling fan & lighting installation</li>
+                        <li>Power loss diagnostics</li>
+                        <li>Code-compliant repair work</li>
+                    </ul>
+                </div>
+                <img src="/Images/electrician3.jpg" alt="Electrical repair"
+                    class="w-full lg:w-1/2 sm:h-80 object-cover rounded-lg shadow" />
+            </div>
+
+            <!-- Plumbing Service -->
+            <div
+                id="plumbing"
+                class="bg-yellow-50 rounded-xl shadow-md p-10 flex flex-col lg:flex-row items-center gap-8">
+                <img src="/Images/plumbing1.jpg" alt="Plumber at work"
+                    class="w-full lg:w-1/2 sm:h-80 object-cover rounded-lg shadow" />
+                <div class="flex-1">
+                    <h3 class="sm:text-3xl text-xl font-semibold text-blue-900 mb-4">Urgent
+                        Plumbing Fixes</h3>
+                    <p class="text-gray-700 mb-4">
+                        Leaks, clogs, and drips can’t wait. We handle minor
+                        plumbing emergencies quickly to prevent bigger issues.
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-700 space-y-2">
+                        <li>Leaky pipes and faucets</li>
+                        <li>Clogged drains & toilet issues</li>
+                        <li>Fixture replacements</li>
+                        <li>Emergency water shutoff support</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section
+            class="relative py-20 px-6 bg-gradient-to-br from-blue-700 via-blue-600 to-blue-500 text-white overflow-hidden">
+            <!-- Decorative BG SVG -->
+            <svg
+                class="absolute top-0 left-0 w-96 h-96 opacity-10 transform -translate-x-1/2 -translate-y-1/2"
+                viewBox="0 0 200 200" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="100" fill="white" />
+            </svg>
+
+            <div class="container mx-auto max-w-5xl relative z-10 text-center">
+                <h3
+                    class="sm:text-4xl md:text-5xl text-3xl font-extrabold mb-6 drop-shadow-xl leading-snug">
+                    Need Something Else?
+                </h3>
+
+                <p
+                    class="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-blue-100 drop-shadow-md">
+                    Have a unique home improvement project or repair task not
+                    listed above? We’re happy to discuss custom requests
+                    tailored to your needs.
+                </p>
+
+                <a href="/contact"
+                    class="inline-block bg-white text-blue-700 text-lg font-semibold px-10 py-4 rounded-full shadow-lg hover:bg-blue-100 transition duration-300">
+                    Contact Us Today
+                </a>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section
+            class="relative py-20 px-6 bg-gradient-to-r from-blue-100 to-blue-200">
+            <div class="container mx-auto max-w-6xl text-center">
+
+                <!-- Decorative Quote SVG -->
+                <svg
+                    class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-16 h-16 text-blue-300 opacity-20"
+                    fill="currentColor" viewBox="0 0 24 24">
+                    <path
+                        d="M7.17 6A5.002 5.002 0 007 16h2a3 3 0 003-3v-1.17A3.001 3.001 0 0012 7H7.17zm10 0A5.002 5.002 0 0017 16h2a3 3 0 003-3v-1.17A3.001 3.001 0 0022 7h-4.83z" />
+                </svg>
+
+                <h3
+                    class="sm:text-4xl text-3xl font-bold mb-12 text-blue-900">What
+                    Clients
+                    Say About Us</h3>
+
+                <div class="grid gap-10 md:grid-cols-2">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8 relative">
+                        <p class="text-gray-700 italic leading-relaxed mb-6">
+                            “Proserv saved my weekend! My power went out late
+                            Saturday night their technician was at my door in
+                            less than an hour. Fast, friendly, and fixed it
+                            safely.”
+                        </p>
+                        <div
+                            class="flex justify-center text-yellow-400 text-xl">★★★★★</div>
+                        <div
+                            class="flex items-center justify-center gap-9 mb-3">
+                            <div
+                                class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-white text-lg font-bold">AM</div>
+                            <div class="text-left">
+                                <p class="font-semibold text-blue-800">Amina
+                                    M.</p>
+                                <p class="text-sm text-gray-500">Hyde Park,
+                                    Chicago</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8 relative">
+                        <p class="text-gray-700 italic leading-relaxed mb-6">
+                            “I had a leaking bathroom pipe that was causing
+                            water damage. Proserv’s plumber came right away and
+                            resolved everything quickly and professionally.”
+                        </p>
+                        <div
+                            class="flex justify-center text-yellow-400 text-xl mb-3">★★★★☆</div>
+                        <div
+                            class="flex items-center justify-center gap-9 mb-3">
+                            <div
+                                class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-white text-lg font-bold">JK</div>
+                            <div class="text-left">
+                                <p class="font-semibold text-blue-800">James
+                                    K.</p>
+                                <p class="text-sm text-gray-500">Bronzeville,
+                                    Chicago</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8 relative">
+                        <p class="text-gray-700 italic leading-relaxed mb-6">
+                            “Very affordable and very efficient. They mounted my
+                            TV, fixed a broken cabinet, and sealed a drafty
+                            window all in one visit. Highly recommend!”
+                        </p>
+                        <div
+                            class="flex justify-center text-yellow-400 text-xl mb-3">★★★★★</div>
+                        <div
+                            class="flex items-center justify-center gap-9 mb-3">
+                            <div
+                                class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-white text-lg font-bold">LD</div>
+                            <div class="text-left">
+                                <p class="font-semibold text-blue-800">Lydia
+                                    D.</p>
+                                <p class="text-sm text-gray-500">Logan Square,
+                                    Chicago</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="bg-white rounded-2xl shadow-xl p-8 relative">
+                        <p class="text-gray-700 italic leading-relaxed mb-6">
+                            “Great service from start to finish. The team was
+                            respectful, on time, and cleaned up after repairing
+                            my light fixture. Will definitely use again!”
+                        </p>
+                        <div
+                            class="flex justify-center text-yellow-400 text-xl mb-3">★★★★☆</div>
+                        <div
+                            class="flex items-center justify-center gap-9 mb-3">
+                            <div
+                                class="w-12 h-12 bg-blue-200 rounded-full flex items-center justify-center text-white text-lg font-bold">RM</div>
+                            <div class="text-left">
+                                <p class="font-semibold text-blue-800">Ryan
+                                    M.</p>
+                                <p class="text-sm text-gray-500">West Loop,
+                                    Chicago</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- CTA -->
+                <div class="mt-14">
+                    <a href="/contact"
+                        class="inline-block bg-yellow-900 text-white px-8 py-4 rounded-full font-semibold shadow hover:bg-yellow-800 transition">
+                        Join Our Happy Clients
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="bg-gradient-to-br from-white to-blue-50 py-20 px-6">
+            <div class="container mx-auto max-w-5xl">
+               <h3
+                    class="sm:text-4xl text-2xl font-bold text-center text-blue-900 mb-12">Frequently
+                    Asked Questions</h3>
+
+                <div class="space-y-6">
+                    <!-- FAQ Item -->
+                    <details
+                        class="group border border-blue-100 bg-white p-6 rounded-xl shadow-sm transition duration-300">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer sm:text-lg font-semibold text-blue-800">
+                            What areas do you serve?
+                            <span
+                                class="ml-2 text-blue-500 icon-plus toggle-icon">+</span>
+                            <span
+                                class="ml-2 text-blue-500 icon-minus toggle-icon hidden">−</span>
+
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            We proudly serve Chicago, IL and surrounding
+                            neighborhoods. If you're unsure whether we cover
+                            your area, feel free to reach out we're always
+                            happy to help.
+                        </p>
+                    </details>
+
+                    <details
+                        class="group border border-blue-100 bg-white p-6 rounded-xl shadow-sm transition duration-300">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer sm:text-lg font-semibold text-blue-800">
+                            What types of services do you offer?
+                            <span
+                                class="ml-2 text-blue-500 icon-plus toggle-icon">+</span>
+                            <span
+                                class="ml-2 text-blue-500 icon-minus toggle-icon hidden">−</span>
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            We specialize in emergency handyman work, light
+                            electrical repairs, and minor plumbing solutions
+                            perfect for quick fixes and urgent home needs.
+                        </p>
+                    </details>
+
+                    <details
+                        class="group border border-blue-100 bg-white p-6 rounded-xl shadow-sm transition duration-300">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer sm:text-lg font-semibold text-blue-800">
+                            Are you licensed and insured?
+                            <span
+                                class="ml-2 text-blue-500 icon-plus toggle-icon">+</span>
+                            <span
+                                class="ml-2 text-blue-500 icon-minus toggle-icon hidden">−</span>
+
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            Yes! Proserv Emergency Services is fully insured,
+                            and our technicians are trained to industry
+                            standards. We guarantee quality and safety on every
+                            job.
+                        </p>
+                    </details>
+
+                    <details
+                        class="group border border-blue-100 bg-white p-6 rounded-xl shadow-sm transition duration-300">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer sm:text-lg font-semibold text-blue-800">
+                            How do I get a quote or book a service?
+                            <span
+                                class="ml-2 text-blue-500 icon-plus toggle-icon">+</span>
+                            <span
+                                class="ml-2 text-blue-500 icon-minus toggle-icon hidden">−</span>
+
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            You can call us, email, or fill out our online
+                            contact form. We respond quickly to provide free
+                            estimates and set up your appointment.
+                        </p>
+                    </details>
+
+                    <details
+                        class="group border border-blue-100 bg-white p-6 rounded-xl shadow-sm transition duration-300">
+                        <summary
+                            class="flex justify-between items-center cursor-pointer sm:text-lg font-semibold text-blue-800">
+                            Do you handle emergency calls?
+                            <span
+                                class="ml-2 text-blue-500 icon-plus toggle-icon">+</span>
+                            <span
+                                class="ml-2 text-blue-500 icon-minus toggle-icon hidden">−</span>
+
+                        </summary>
+                        <p class="mt-4 text-gray-700 leading-relaxed">
+                            Absolutely. If something breaks unexpectedly like
+                            a leak or power issue call us right away. Our
+                            emergency response team will do its best to help
+                            ASAP.
+                        </p>
+                    </details>
+                </div>
+
+                <!-- CTA -->
+                <div class="text-center mt-14">
+                    <a href="/contact"
+                        class="inline-block bg-blue-900 text-white px-8 py-3 rounded-full font-semibold shadow hover:bg-blue-800 transition">
+                        Still have questions? Contact us →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-gray-300 py-12">
+            <div
+                class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
+
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <h4
+                        class="text-xl font-semibold text-white mb-4">Proserv
+                        Emergency Services Inc</h4>
+                    <p class="text-gray-400 mb-4">
+                        Emergency handyman, minor electrical, and plumbing
+                        solutions across Chicago, IL. Fast, reliable, and
+                        done
+                        right the first time.
+                    </p>
+                    <p class="text-gray-500 text-sm">&copy; 2025 Proserv
+                        Emergency Services Inc</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Quick
+                        Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/"
+                                class="hover:text-white transition">Home</a></li>
+                        <li><a href="/about"
+                                class="hover:text-white transition">About
+                                Us</a></li>
+                        <li><a href="/services"
+                                class="hover:text-white transition">Services</a></li>
+                        <li><a href="/contact"
+                                class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4
+                        class="text-xl font-semibold text-white mb-4">Contact</h4>
+                    <p class="text-gray-400 flex items-start">
+                        <img
+                            src="https://img.icons8.com/ios-filled/50/ffffff/marker.png"
+                            class="w-5 h-5 mr-2 mt-1"
+                            alt="Map marker icon" />
+                        6136 N Winchester Avenue STE 2H, Chicago, IL
+                    </p>
+                    <p class="text-gray-400 flex items-center mt-4">
+                        <img
+                            src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"
+                            class="w-5 h-5 mr-2" alt="Phone icon" />
+                        <a href="tel:+13128711893"
+                            class="hover:text-white transition">+1 (312)
+                            871-1893</a>
+                    </p>
+                    <p class="text-gray-400 flex items-center mt-4">
+                        <img
+                            src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png"
+                            class="w-5 h-5 mr-2" alt="Email icon" />
+                        <a href="mailto:admin@proservemergency.com"
+                            class="hover:text-white transition">admin@proservemergency.com</a>
+                    </p>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4
+                        class="text-xl font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/terms-and-conditions" target="_blank"
+                                class="hover:text-white transition">Terms &
+                                Conditions</a></li>
+                        <li><a href="/privacy-policy" target="_blank"
+                                class="hover:text-white transition">Privacy
+                                Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Follow
+                        Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="text-gray-400 hover:text-white transition"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12a10 10 0 10-11.5 9.8v-6.9H8v-2.9h2.5V9.5c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.3 0-1.7.8-1.7 1.6v2h2.9l-.5 2.9h-2.4v6.9A10 10 0 0022 12z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="text-gray-400 hover:text-white transition"
+                            aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M8 19c7.7 0 11.9-6.3 11.9-11.7 0-.2 0-.4 0-.6A8.3 8.3 0 0022 5.5a8.2 8.2 0 01-2.3.7 4.1 4.1 0 001.8-2.3 8.3 8.3 0 01-2.6 1 4.1 4.1 0 00-7 3.7 11.6 11.6 0 01-8.5-4.3 4.1 4.1 0 001.3 5.4A4 4 0 012 9.7v.1a4.1 4.1 0 003.3 4 4.1 4.1 0 01-1.8.1 4.1 4.1 0 003.8 2.8 8.3 8.3 0 01-5.7 1.6 8.4 8.4 0 01-1-.1 11.7 11.7 0 007 2" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="text-gray-400 hover:text-white transition"
+                            aria-label="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0 2h10c1.6 0 3 1.4 3 3v10c0 1.6-1.4 3-3 3H7c-1.6 0-3-1.4-3-3V7c0-1.6 1.4-3 3-3zm5 2a4 4 0 100 8 4 4 0 000-8zm0 2a2 2 0 110 4 2 2 0 010-4zm4.5-.5a1 1 0 11-2 0 1 1 0 012 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Back to Top Button -->
+            <div class="mt-12 text-center">
+                <a href="#top"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full shadow-lg transition duration-300 ease-in-out">
+                    ↑ Back to Top
+                </a>
+            </div>
+        </footer>
+    </body>
+
+    <script>
+    // Simple mobile nav toggle
+    const btn = document.getElementById('nav-toggle');
+    const menu = document.getElementById('nav-mobile');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("details").forEach((detail) => {
+      const toggle = detail.querySelector(".toggle-icon");
+      const plus = detail.querySelector(".icon-plus");
+      const minus = detail.querySelector(".icon-minus");
+
+      detail.addEventListener("toggle", () => {
+        if (detail.open) {
+          plus.classList.add("hidden");
+          minus.classList.remove("hidden");
+        } else {
+          plus.classList.remove("hidden");
+          minus.classList.add("hidden");
+        }
+      });
+    });
+  });
+  </script>
+</html>

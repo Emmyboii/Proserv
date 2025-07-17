@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>About Us - Proserv Emergency Services Inc</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+        <link rel="icon" href="/Images/Logo.png" type="image/png" />
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body class="bg-white text-gray-900 font-sans leading-relaxed">
+
+        <!-- Header -->
+        <header class="bg-yellow-800 text-white shadow-md sticky top-0 z-50">
+            <div
+                class="container mx-auto flex items-center justify-between py-3 px-5 max-w-7xl">
+                <!-- Logo + Site Title -->
+                <a href="/" class="flex items-center space-x-3">
+                    <img src="/Images/Logo.png"
+                        alt="Zimlink Contractors Logo"
+                        class="w-20 rounded-3xl" />
+                </a>
+
+                <!-- Mobile menu button -->
+                <button
+                    id="nav-toggle"
+                    class="md:hidden focus:outline-none"
+                    aria-label="Toggle navigation menu"
+                    title="Toggle navigation menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+
+                <!-- Navigation Links -->
+                <nav id="nav-menu"
+                    class="hidden md:flex space-x-8 text-lg font-medium">
+                    <a href="/"
+                        class="hover:text-blue-300 font-bold transition">Home</a>
+                    <a href="/about"
+                        class="hover:text-blue-300 underline transition">About</a>
+                    <a href="/services"
+                        class="hover:text-blue-300 transition">Services</a>
+                    <a href="/contact"
+                        class="hover:text-blue-300 transition">Contact</a>
+                </nav>
+            </div>
+
+            <!-- Mobile Nav (shown when toggled) -->
+            <div id="nav-mobile"
+                class="md:hidden hidden absolute top-26 w-full z-50 bg-yellow-800">
+                <nav class="flex flex-col space-y-2 p-4">
+                    <a href="/"
+                        class="block text-white hover:text-blue-200">Home</a>
+                    <a href="/about"
+                        class="block text-white hover:text-blue-200">About</a>
+                    <a href="/services"
+                        class="block text-white hover:text-blue-200">Services</a>
+                    <a href="/contact"
+                        class="block text-white hover:text-blue-200">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="relative hero-section">
+            <div class="hero-overlay">
+                <h1
+                    class="text-white text-4xl md:text-5xl font-bold text-center px-4">Your
+                    About Proserv Emergency Services</h1>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="py-20 px-6 bg-gray-50">
+            <div class="max-w-6xl mx-auto">
+                <h2
+                    class="text-4xl font-bold text-blue-900 mb-12 text-center">Who
+                    We Are</h2>
+                <div
+                    class="flex flex-col md:flex-row md:space-x-10 items-center mb-10 mx-auto">
+                    <img
+                        src="/Images/about2.jpg"
+                        alt="Emergency response specialists at work"
+                        class="rounded-xl shadow-lg mb-6 md:mb-0 md:w-1/2 object-cover"
+                        loading="lazy" />
+
+                    <div class="md:w-1/2 space-y-6">
+                        <p class="text-lg text-gray-700">
+                            <strong>Proserv Emergency Services Inc</strong> is a
+                            trusted name in fast, professional emergency
+                            response solutions across Chicago and surrounding
+                            areas. Headquartered at <strong>6136 N Winchester
+                                Avenue STE 2H, Chicago, Illinois</strong>, we
+                            provide critical support to residential and
+                            commercial clients when they need it most.
+                        </p>
+                        <p class="text-lg text-gray-700">
+                            Whether it’s fixing a faulty outlet, repairing a
+                            leaky faucet, installing shelving, or
+                            troubleshooting minor wiring issues, our skilled
+                            technicians handle each task with care, efficiency,
+                            and attention to detail. No job is too small — and
+                            every job is important to us.
+                        </p>
+                        <p class="text-lg text-gray-700">
+                            At Proserv, we understand that emergencies don’t
+                            wait — and neither do we. Our mission is to help you
+                            recover quickly, safely, and with minimal
+                            disruption. From the moment you call us, we
+                            prioritize clear communication, rapid mobilization,
+                            and meticulous care for your property and
+                            well-being.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Section: Why Choose Us -->
+        <section class="bg-blue-50 py-24">
+            <div class="max-w-7xl mx-auto px-6 text-center">
+                <h3
+                    class="sm:text-4xl md:text-5xl text-3xl font-bold text-blue-900 mb-16">
+                    Why Choose Proserv Emergency
+                    Services Inc?
+                </h3>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <!-- Card 1 -->
+                    <div
+                        class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-yellow-200 transition duration-300 group">
+                        <div class="mb-6">
+                            <img
+                                src="/Images/about4.jpg"
+                                alt="Skilled Technicians"
+                                class="mx-auto rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 w-28 h-28 object-cover" />
+                        </div>
+                        <h4
+                            class="text-2xl font-semibold text-blue-900 mb-4">Skilled
+                            & Certified Technicians</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            Our professionals are fully trained in minor
+                            electrical, plumbing, and handyman services —
+                            ensuring safety, efficiency, and code compliance.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-yellow-200 transition duration-300 group">
+                        <div class="mb-6">
+                            <img
+                                src="/Images/about3.jpg"
+                                alt="Upfront Pricing"
+                                class="mx-auto rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 w-28 h-28 object-cover" />
+                        </div>
+                        <h4
+                            class="text-2xl font-semibold text-blue-900 mb-4">Upfront
+                            & Fair Pricing</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            We believe in transparency. No hidden fees — just
+                            clear, affordable quotes tailored to your project’s
+                            real needs.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-yellow-200 transition duration-300 group">
+                        <div class="mb-6">
+                            <img
+                                src="/Images/about5.jpg"
+                                alt="Flexible Appointments"
+                                class="mx-auto rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 w-28 h-28 object-cover" />
+                        </div>
+                        <h4
+                            class="text-2xl font-semibold text-blue-900 mb-4">Flexible
+                            Appointments</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            Whether it’s an urgent fix or a scheduled upgrade,
+                            we work on your time. Same-day service available on
+                            request.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="bg-white rounded-3xl p-8 shadow-xl hover:shadow-yellow-200 transition duration-300 group">
+                        <div class="mb-6">
+                            <img
+                                src="/Images/about6.jpg"
+                                alt="Emergency Response"
+                                class="mx-auto rounded-xl shadow-md transition-transform duration-300 group-hover:scale-105 w-28 h-28 object-cover" />
+                        </div>
+                        <h4
+                            class="text-2xl font-semibold text-blue-900 mb-4">Rapid
+                            Emergency Response</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            Emergencies don’t wait — and neither do we. Our team
+                            is ready to respond quickly, day or night, to secure
+                            your property and restore peace of mind.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Enhanced Values Section - Proserv Emergency Services Inc -->
+        <section class="py-24 px-6 bg-yellow-50">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2
+                    class="text-4xl font-bold text-blue-900 mb-16 tracking-wide">What
+                    We Stand For</h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+
+                    <!-- Integrity -->
+                    <div
+                        class="bg-white p-10 rounded-3xl shadow-xl hover:shadow-yellow-200 transition duration-300 group">
+                        <div class="flex items-center justify-center mb-6">
+                            <div
+                                class="bg-yellow-100 p-4 rounded-full shadow-md group-hover:scale-110 transition duration-300">
+                                <img
+                                    src="https://img.icons8.com/ios-filled/100/blue/handshake.png"
+                                    alt="Integrity Icon" class="w-14 h-14">
+                            </div>
+                        </div>
+                        <h3
+                            class="text-2xl font-semibold text-blue-900 mb-4">Integrity</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            We honor our word. No cutting corners — just
+                            transparent, reliable service built on trust and
+                            respect.
+                        </p>
+                    </div>
+
+                    <!-- Precision -->
+                    <div
+                        class="bg-white p-10 rounded-3xl shadow-xl hover:shadow-yellow-200 transition duration-300 group">
+                        <div class="flex items-center justify-center mb-6">
+                            <div
+                                class="bg-yellow-100 p-4 rounded-full shadow-md group-hover:scale-110 transition duration-300">
+                                <img
+                                    src="https://img.icons8.com/ios-filled/100/blue/medal.png"
+                                    alt="Excellence Icon" class="w-14 h-14">
+                            </div>
+                        </div>
+                        <h3
+                            class="text-2xl font-semibold text-blue-900 mb-4">Excellence</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            We go beyond the basics — delivering top-tier
+                            workmanship with careful attention to detail on
+                            every job.
+                        </p>
+                    </div>
+
+                    <!-- Commitment to Community -->
+                    <div
+                        class="bg-white p-10 rounded-3xl shadow-xl hover:shadow-yellow-200 transition duration-300 group">
+                        <div class="flex items-center justify-center mb-6">
+                            <div
+                                class="bg-yellow-100 p-4 rounded-full shadow-md group-hover:scale-110 transition duration-300">
+                                <img
+                                    src="https://img.icons8.com/color/96/000000/conference-call--v1.png"
+                                    alt="Community Icon" class="w-14 h-14">
+                            </div>
+                        </div>
+                        <h3
+                            class="text-2xl font-semibold text-blue-900 mb-4">Community</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Chicago is our home. We treat each client like
+                            family and every property with care and dignity.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Redesigned Mission & Core Values Section -->
+        <section class="bg-white py-24 px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl font-bold text-yellow-900 mb-4">What Drives
+                    Us</h2>
+                <p class="text-gray-600 text-lg mb-16">At Proserv Emergency
+                    Services Inc, our mission and values aren’t just statements
+                    — they guide everything we do.</p>
+            </div>
+
+            <div class="space-y-16 max-w-5xl mx-auto relative">
+                <!-- Vertical line (timeline style) -->
+                <div
+                    class="absolute left-7 md:left-8 top-0 bottom-0 w-1 bg-yellow-900 rounded-full z-0"></div>
+
+                <!-- Mission -->
+                <div class="relative z-10 flex gap-6 items-center">
+                    <div
+                        class="bg-blue-900 text-white p-4 rounded-full shadow-md relative z-10">
+                        <img
+                            src="https://img.icons8.com/ios-filled/40/ffffff/goal.png"
+                            alt="Mission Icon" />
+                    </div>
+                    <div
+                        class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg w-full">
+                        <h3 class="text-2xl font-bold text-blue-900 mb-2">Our
+                            Mission</h3>
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            To be the trusted first responders for home and
+                            property emergencies — restoring peace of mind
+                            with rapid, expert service backed by compassion and
+                            precision.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Value 1 -->
+                <div class="relative z-10 flex gap-6 items-center">
+                    <div
+                        class="bg-yellow-900 text-white p-4 rounded-full shadow-md relative z-10">
+                        <img
+                            src="https://img.icons8.com/ios-filled/40/ffffff/lightning-bolt.png"
+                            alt="Urgency Icon" />
+                    </div>
+                    <div
+                        class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg w-full">
+                        <h4
+                            class="text-xl font-semibold text-yellow-900 mb-1">Urgency
+                            with Care</h4>
+                        <p class="text-gray-700 text-base">We respond fast — but
+                            never carelessly. Every action is thoughtful and
+                            thorough.</p>
+                    </div>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="relative z-10 flex gap-6 items-center">
+                    <div
+                        class="bg-yellow-900 text-white p-4 rounded-full shadow-md relative z-10">
+                        <img
+                            src="https://img.icons8.com/ios-filled/40/ffffff/checked.png"
+                            alt="Dependability Icon" />
+                    </div>
+                    <div
+                        class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg w-full">
+                        <h4
+                            class="text-xl font-semibold text-yellow-900 mb-1">Dependability</h4>
+                        <p class="text-gray-700 text-base">Rain or shine, day or
+                            night — you can count on us to deliver every
+                            time.</p>
+                    </div>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="relative z-10 flex gap-6 items-center">
+                    <div
+                        class="bg-yellow-900 text-white p-4 rounded-full shadow-md relative z-10">
+                        <img
+                            src="https://img.icons8.com/ios-filled/40/ffffff/task.png"
+                            alt="Accountability Icon" />
+                    </div>
+                    <div
+                        class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg w-full">
+                        <h4
+                            class="text-xl font-semibold text-yellow-900 mb-1">Accountability</h4>
+                        <p class="text-gray-700 text-base">We take ownership of
+                            our work — and the outcome. You’ll never be left
+                            guessing.</p>
+                    </div>
+                </div>
+
+                <!-- Value 4 -->
+                <div class="relative z-10 flex gap-6 items-center">
+                    <div
+                        class="bg-yellow-900 text-white p-4 rounded-full shadow-md relative z-10">
+                        <img
+                            src="https://img.icons8.com/ios-filled/40/ffffff/heart-with-pulse.png"
+                            alt="Compassion Icon" />
+                    </div>
+                    <div
+                        class="bg-gray-50 p-8 rounded-xl shadow hover:shadow-lg w-full">
+                        <h4
+                            class="text-xl font-semibold text-yellow-900 mb-1">Compassion</h4>
+                        <p class="text-gray-700 text-base">In moments of crisis,
+                            we lead with empathy. We treat your home like it’s
+                            our own.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section
+            class="relative py-20 px-6 bg-gradient-to-br from-blue-700 via-blue-600 to-blue-500 text-white overflow-hidden">
+            <!-- Decorative BG SVG -->
+            <svg
+                class="absolute top-0 left-0 w-96 h-96 opacity-10 transform -translate-x-1/2 -translate-y-1/2"
+                viewBox="0 0 200 200" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="100" fill="white" />
+            </svg>
+
+            <div class="container mx-auto max-w-5xl relative z-10 text-center">
+                <h3
+                    class="sm:text-4xl md:text-5xl text-3xl font-extrabold mb-6 drop-shadow-xl leading-snug">
+                    Get Reliable Repairs When You Need Them Most
+                </h3>
+
+                <p
+                    class="text-lg md:text-xl mb-10 max-w-3xl mx-auto text-blue-100 drop-shadow-md">
+                    Whether it's an urgent fix or a scheduled upgrade, <span
+                        class="font-semibold">Proserv Emergency Services</span>
+                    is ready to help. Experience fast response times, clear
+                    communication, and quality craftsmanship every time.
+                </p>
+
+                <a href="/contact"
+                    class="inline-block bg-white text-blue-700 text-lg font-semibold px-10 py-4 rounded-full shadow-lg hover:bg-blue-100 transition duration-300">
+                    Request a Free Estimate
+                </a>
+
+                <p class="mt-6 text-sm text-blue-100">Serving homeowners across
+                    Chicago, IL and surrounding areas</p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-gray-900 text-gray-300 py-12">
+            <div
+                class="container mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
+
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <h4 class="text-xl font-semibold text-white mb-4">Proserv
+                        Emergency Services Inc</h4>
+                    <p class="text-gray-400 mb-4">
+                        Emergency handyman, minor electrical, and plumbing
+                        solutions across Chicago, IL. Fast, reliable, and done
+                        right the first time.
+                    </p>
+                    <p class="text-gray-500 text-sm">&copy; 2025 Proserv
+                        Emergency Services Inc</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Quick
+                        Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/"
+                                class="hover:text-white transition">Home</a></li>
+                        <li><a href="/about"
+                                class="hover:text-white transition">About
+                                Us</a></li>
+                        <li><a href="/services"
+                                class="hover:text-white transition">Services</a></li>
+                        <li><a href="/contact"
+                                class="hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4
+                        class="text-xl font-semibold text-white mb-4">Contact</h4>
+                    <p class="text-gray-400 flex items-start">
+                        <img
+                            src="https://img.icons8.com/ios-filled/50/ffffff/marker.png"
+                            class="w-5 h-5 mr-2 mt-1" alt="Map marker icon" />
+                        6136 N Winchester Avenue STE 2H, Chicago, IL
+                    </p>
+                    <p class="text-gray-400 flex items-center mt-4">
+                        <img
+                            src="https://img.icons8.com/ios-filled/50/ffffff/phone.png"
+                            class="w-5 h-5 mr-2" alt="Phone icon" />
+                        <a href="tel:+13128711893"
+                            class="hover:text-white transition">+1 (312)
+                            871-1893</a>
+                    </p>
+                    <p class="text-gray-400 flex items-center mt-4">
+                        <img
+                            src="https://img.icons8.com/ios-filled/50/ffffff/new-post.png"
+                            class="w-5 h-5 mr-2" alt="Email icon" />
+                        <a href="mailto:admin@proservemergency.com"
+                            class="hover:text-white transition">admin@proservemergency.com</a>
+                    </p>
+                </div>
+
+                <!-- Legal -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/terms-and-conditions" target="_blank"
+                                class="hover:text-white transition">Terms &
+                                Conditions</a></li>
+                        <li><a href="/privacy-policy" target="_blank"
+                                class="hover:text-white transition">Privacy
+                                Policy</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div>
+                    <h4 class="text-xl font-semibold text-white mb-4">Follow
+                        Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#"
+                            class="text-gray-400 hover:text-white transition"
+                            aria-label="Facebook">
+                            <svg class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22 12a10 10 0 10-11.5 9.8v-6.9H8v-2.9h2.5V9.5c0-2.5 1.5-3.8 3.7-3.8 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.3 0-1.7.8-1.7 1.6v2h2.9l-.5 2.9h-2.4v6.9A10 10 0 0022 12z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="text-gray-400 hover:text-white transition"
+                            aria-label="Twitter">
+                            <svg class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M8 19c7.7 0 11.9-6.3 11.9-11.7 0-.2 0-.4 0-.6A8.3 8.3 0 0022 5.5a8.2 8.2 0 01-2.3.7 4.1 4.1 0 001.8-2.3 8.3 8.3 0 01-2.6 1 4.1 4.1 0 00-7 3.7 11.6 11.6 0 01-8.5-4.3 4.1 4.1 0 001.3 5.4A4 4 0 012 9.7v.1a4.1 4.1 0 003.3 4 4.1 4.1 0 01-1.8.1 4.1 4.1 0 003.8 2.8 8.3 8.3 0 01-5.7 1.6 8.4 8.4 0 01-1-.1 11.7 11.7 0 007 2" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="text-gray-400 hover:text-white transition"
+                            aria-label="Instagram">
+                            <svg class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M7 2C4.2 2 2 4.2 2 7v10c0 2.8 2.2 5 5 5h10c2.8 0 5-2.2 5-5V7c0-2.8-2.2-5-5-5H7zm0 2h10c1.6 0 3 1.4 3 3v10c0 1.6-1.4 3-3 3H7c-1.6 0-3-1.4-3-3V7c0-1.6 1.4-3 3-3zm5 2a4 4 0 100 8 4 4 0 000-8zm0 2a2 2 0 110 4 2 2 0 010-4zm4.5-.5a1 1 0 11-2 0 1 1 0 012 0z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Back to Top Button -->
+            <div class="mt-12 text-center">
+                <a href="#top"
+                    class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full shadow-lg transition duration-300 ease-in-out">
+                    ↑ Back to Top
+                </a>
+            </div>
+
+        </footer>
+
+        <!-- Script -->
+        <script>
+      document.getElementById("nav-toggle").addEventListener("click", () => {
+        document.getElementById("nav-mobile").classList.toggle("hidden");
+      });
+    </script>
+    </body>
+</html>
